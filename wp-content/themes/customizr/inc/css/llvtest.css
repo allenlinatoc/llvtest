@@ -5769,7 +5769,7 @@ body {
   padding-bottom: 0px;
   color: #5a5a5a;
   background: #fafafa;
-  background-image: none;
+  background-image: #000;
 }
 ul,
 ol {
