@@ -27,6 +27,13 @@ body {
 
 .tc-header {
     background-color: #000;
-    height: 400px;
     transition: all 3s ease;
+}
+.tc-header.clearfix.row-fluid {
+    margin: 0px;
+    border-bottom: 0px;
+}
+
+div {
+    margin: 0px;
 }

@@ -34,8 +34,8 @@
 			//the '__header' hook is used by (ordered by priorities) : TC_header_main::$instance->tc_logo_title_display(), TC_header_main::$instance->tc_tagline_display(), TC_header_main::$instance->tc_navbar_display()
 				do_action( '__header' ); 
 			?>
-
 		</header>
+                <div style="background-color: #333;width: 100%; height: 200px;">HAHA</div>
 
 		<?php 
 		 	//This hook is filtered with the slider : TC_slider::$instance->tc_slider_display()
