@@ -23,3 +23,10 @@
 body {
     background-color: #FFF;
 }
+
+
+.tc-header {
+    background-color: #000;
+    height: 400px;
+    transition: all 3s ease;
+}
