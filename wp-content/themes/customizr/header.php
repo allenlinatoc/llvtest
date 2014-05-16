@@ -17,27 +17,29 @@
 <![endif]-->
 <!--[if !(IE 7) | !(IE 8)  ]><!-->
 <html <?php language_attributes(); ?>>                          
-<!--<![endif]-->
+    <!--<![endif]-->
 
-	<?php 
-		//the '__before_body' hook is used by TC_header_main::$instance->tc_head_display()
-		do_action( '__before_body' ); 
-	?>
+    <?php
+    //the '__before_body' hook is used by TC_header_main::$instance->tc_head_display()
+    do_action('__before_body');
+    ?>
 
-	<body <?php body_class(); ?> <?php echo tc__f('tc_body_attributes' , 'itemscope itemtype="http://schema.org/WebPage"') ?>>
-		
-		<?php do_action( '__before_header' ); ?>
+    <body <?php body_class(); ?> <?php echo tc__f('tc_body_attributes', 'itemscope itemtype="http://schema.org/WebPage"') ?>>
 
-	   	<header class="<?php echo tc__f('tc_header_classes', 'tc-header clearfix row-fluid') ?>" role="banner">
-			
-			<?php 
-			//the '__header' hook is used by (ordered by priorities) : TC_header_main::$instance->tc_logo_title_display(), TC_header_main::$instance->tc_tagline_display(), TC_header_main::$instance->tc_navbar_display()
-				do_action( '__header' ); 
-			?>
-		</header>
-                <div style="background-color: #333;width: 100%; height: 200px;">HAHA</div>
+        <?php do_action('__before_header'); ?>
 
-		<?php 
-		 	//This hook is filtered with the slider : TC_slider::$instance->tc_slider_display()
-			do_action ( '__after_header' )
-		?>
+        <header class="<?php echo tc__f('tc_header_classes', 'tc-header clearfix row-fluid') ?>" role="banner">
+
+            <?php
+            //the '__header' hook is used by (ordered by priorities) : TC_header_main::$instance->tc_logo_title_display(), TC_header_main::$instance->tc_tagline_display(), TC_header_main::$instance->tc_navbar_display()
+            do_action('__header');
+            ?>
+        </header>
+        <div class="header-background-plate">
+            
+        </div>
+
+        <?php
+        //This hook is filtered with the slider : TC_slider::$instance->tc_slider_display()
+        do_action('__after_header')
+        ?>

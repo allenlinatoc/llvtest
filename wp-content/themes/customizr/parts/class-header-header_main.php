@@ -228,11 +228,10 @@ class TC_header_main {
 	 * @since Customizr 3.0.10
 	 */
 	function tc_navbar_display() {
-		
+            
 		ob_start();
 		do_action( 'before_navbar' ); 
 		?>
-
       	<div class="<?php echo apply_filters( 'tc_navbar_wrapper_class', 'navbar-wrapper clearfix span9' ) ?>">
 
       		<div class="navbar notresp row-fluid pull-left">
